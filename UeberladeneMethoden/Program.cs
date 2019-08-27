@@ -45,6 +45,12 @@ namespace UeberladeneMethoden
             Console.WriteLine();
 
 
+
+            int zahl = MethodenUeberladen.findeHoechsteZahl(1,23,134,5,6,7,88);
+            Console.WriteLine("Groesste Zahl ist {0}", zahl);
+
+
+
             Console.ReadKey();
         }
     }

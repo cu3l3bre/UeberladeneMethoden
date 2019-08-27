@@ -43,5 +43,34 @@ namespace UeberladeneMethoden
                 }
             }
         }
+
+
+        // Methoden mit variabler Parameteranzahl
+        public static int findeHoechsteZahl(params int[] zahlen)
+        {
+            int hoechsteZahl = 0;
+            int summe = 0;
+
+            if (zahlen.Length == 0)
+            {
+                Console.WriteLine("Es wurden keinen Zahlen uebergeben");
+            }
+
+            hoechsteZahl = zahlen.Max();
+
+            foreach(int zahl in zahlen)
+            {
+                summe += zahl;
+            }
+
+            double durchschnitt = summe / (double)zahlen.Length;
+            Console.WriteLine("Durschnitt: {0}", durchschnitt);
+
+
+            return hoechsteZahl;
+            
+        }
+
+
     }
 }
